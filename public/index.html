@@ -20,9 +20,16 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <a-scene embedded arjs='sourceType: webcam;'>
+      <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+      <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
     <div id="root"></div>
     <!--
       This HTML file is a template.
