@@ -1,3 +1,27 @@
+# React-aframe-AR-test
+
+This example want to show a basic approach to implement AR.js with aframe.js into a React app.
+
+## Basic setup
+
+The aframe.js and aframe-ar.js must be in the public folder and should be imported in the `<head></head>` section of the `index.html` file in this way:
+
+```html
+<script src="%PUBLIC_URL%/js/aframe.js"></script>
+<script src="%PUBLIC_URL%/js/aframe-ar.js"></script>
+```
+
+alternatively you can import them from the CDN network:
+
+```html
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+
+```
+
+Minified version of the libs are in place too.
+Used **1.6.2** version of aframe-ar.js.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
